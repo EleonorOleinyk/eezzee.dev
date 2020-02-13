@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/f09b542e8d.js" crossorigin="anonymous"></script>
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta>
+    <title>eezzee</title>
+</head>
+<body>
+    <!-- <input type="file" onchange="readFile(this)"> -->
+    <h2 id="title">eezzee</h2>
+
+    <!-- <div class="item-icon group"></div> -->
+    <h3 id="secondTitle">Youtube links</h3>
+
+   
+    <div class="post-itemYoutube">
+        <!-- <div class="item-content"> -->
+            <div class="firstLayer">
+                <div class="linkInput">
+                    <!--<label for="file">File: </label>--> 
+                    <input type="text" id="input" style="height: 50px !important;"/>
+                </div>
+                <div class="btn-group" id="shareBtn2">
+                    <button type="button" class="btn btn-danger" id="action">GO</button>
+                </div>
+            </div>
+
+            <div class="wrapYoutube"> 
+                <ul class="tabs groupYoutube">
+                  <li><a class="active" href="#/one">Video</a></li>
+                  <li><a href="#/two">Audio only</a></li>
+                  <li><a href="#/three">Video only</a></li>
+                </ul>
+                
+                <div id="content">
+                    <table style="width: 780px; height: 400px;">
+                    <tbody style="text-align: center">
+                        <tr>
+                            <td style="color: #d2694c;">Resolution</td>
+                            <td style="color: #d2694c;">File size</td>
+                            <td style="color: #d2694c;">Download</td>
+                        </tr>
+                        <tr>
+                            <td>td1</td>
+                            <td>td2</td>
+                            <td>td3</td>
+                        </tr>
+                        <tr>
+                            <td>td1</td>
+                            <td>td2</td>
+                            <td>td3</td>
+                        </tr>
+                    </tbody>
+
+                    </table>
+                  <!-- <p id="one">Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur </p>
+                  <p id="two">Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+                  <p id="three">Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p> -->
+                </div>        
+            </div>
+            
+            
+        <!-- </div>               -->
+    </div>
+</body>
+<script>
+        (function ($) {
+
+            var tabs = $(".tabs li a");
+
+            tabs.click(function () {
+                var content = this.hash.replace('/', '');
+                tabs.removeClass("active");
+                $(this).addClass("active");
+                $("#content").find('p').hide();
+                $(content).fadeIn(200);
+            });
+
+        })(jQuery);
+
+</script>
+<!-- <script src="pdfController.js"></script> -->
+</html> 

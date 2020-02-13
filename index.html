@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kit.fontawesome.com/f09b542e8d.js" crossorigin="anonymous"></script>
+    <meta>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width">
+    <title>eezzee</title>
+</head>
+
+<body>
+
+    <div id="dd" class="wrapper-dropdown-5" tabindex="1">
+        <div id="header" key="lang">Language</div>
+        <ul class="dropdown">
+            <li><a href="#" onclick="setLanguage('en')">English</a></li>
+            <li><a href="#" onclick="setLanguage('ru')">Russian</a></li>
+            <li><a href="#" onclick="setLanguage('uk')">Ukrainian</a></li>
+        </ul>
+    </div>
+
+
+    <h2 id="title">eezzee</h2>
+
+    <div class="post-wrap">
+        <div class="post-item">
+            <div class="item-content" id="pdfPage">
+                <div class="item-icon group"></div>
+                <div class="item-body">
+                    <h3 key="pdfVersion">PDF conversion</h3>
+                    <p key="workWithPdf">Versatile and easy-to-use tools for working with PDF files</p>
+                </div>
+                <div class="item-footer">
+                    <a href="#" class="link"><span key="goToPage">Go to page</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-item">
+            <div class="item-content" id="youtubePage">
+                <div class="item-icon tree"></div>
+                <div class="item-body">
+                    <h3 key="youtubeLinks">Youtube links</h3>
+                    <p key="qw">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non
+                        blandit.</p>
+                </div>
+                <div class="item-footer">
+                    <a href="#" class="link"><span key="goToPage">Go to page</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="post-item">
+            <div class="item-content">
+                <div class="item-icon anchor"></div>
+                <div class="item-body">
+                    <h3>Charting</h3>
+                    <p>Quick function graphing online</p>
+                </div>
+                <div class="item-footer">
+                    <a href="#" class="link"><span>Go to page</span></a>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div style="width: 728px; height:90px; position: absolute; background-color: rgb(255, 230, 0); border-radius: 16px; margin: 15px; right: auto; left: 200px; top: 780px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 25px;">728x90</h1>
+        </div>
+
+        <div style="width: 728px; height:90px; position: absolute; background-color: rgb(255, 230, 0); border-radius: 16px; margin: 15px; right: 200px; left: auto; top: 780px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 25px;">728x90</h1>
+        </div>
+    
+        <div style="width: 300px; height:600px; position: absolute; background-color: rgb(126, 155, 0); border-radius: 16px; margin: 15px; right: auto; left: 100px; top: 160px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 225px;">300x600</h1>
+        </div>
+
+        <div style="width: 300px; height:600px; position: absolute; background-color: rgb(126, 155, 0); border-radius: 16px; margin: 15px; right: 100px; left: auto; top: 160px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 225px;">300x600</h1>
+        </div>
+
+        <div style="width: 336px; height: 280px; position: absolute; background-color: red; border-radius: 16px; margin: 15px; right: auto; left: 420px; top: 480px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 120px;">336x280</h1>
+        </div>
+
+        <div style="width: 336px; height: 280px; position: absolute; background-color: red; border-radius: 16px; margin: 15px; right: auto; left: 780px; top: 480px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 120px;">336x280</h1>
+        </div>
+
+        <div style="width: 336px; height: 280px; position: absolute; background-color: red; border-radius: 16px; margin: 15px; right: 420px; left: auto; top: 480px;">
+            <h1 style="color: #f3f5f4; text-align: center; padding-top: 120px;">336x280</h1>
+        </div> -->
+
+
+
+
+
+        <!-- <div class="post-item">
+            <div class="item-content">
+                <div class="item-icon video"></div>
+                <div class="item-body">
+                    <h3>Видеосъемка</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non blandit.</p>
+                </div>
+                <div class="item-footer">
+                    <a href="#" class="link"><span>Подробнее</span></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="post-item">
+            <div class="item-content">
+                <div class="item-icon photo"></div>
+                <div class="item-body">
+                    <h3>Фотография</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non blandit.</p>
+                </div>
+                <div class="item-footer">
+                    <a href="#" class="link"><span>Подробнее</span></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="post-item">
+            <div class="item-content">
+                <div class="item-icon gift"></div>
+                <div class="item-body">
+                    <h3>Подарки</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat a quam non blandit.</p>
+                </div>
+                <div class="item-footer">
+                    <a href="#" class="link"><span>Подробнее</span></a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script>
+
+        document.getElementById('dd').addEventListener('click', function (event) {
+            $('.wrapper-dropdown-5').toggleClass('active');
+            event.stopPropagation();
+        });
+    
+        $('html').click(function (e) {
+            if ($('#dd').attr('class') == 'wrapper-dropdown-5 active') {
+                $('.wrapper-dropdown-5').toggleClass('active');
+            }
+        });
+    
+        document.getElementById("youtubePage").addEventListener("click", () => {
+            location.href = "Youtube.html";
+        })
+    
+        document.getElementById("pdfPage").addEventListener("click", () => {
+            location.href = "PDF.html";
+        })
+    
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

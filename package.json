@@ -1,0 +1,14 @@
+{
+  "name": "simpleapp",
+  "version": "0.0.1",
+  "author": "Buyanov K.M.",
+  "scripts": {
+    "start": "node local.js"
+  },
+  "description": "\"multi-language\"",
+  "main": "filepicker.js",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
